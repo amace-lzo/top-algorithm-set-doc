@@ -1,6 +1,9 @@
 # Matrix
 
-矩阵实体类
+矩阵实体类  
+[Matrix源码][1]
+
+[1]: https://github.com/ineedahouse/top-algorithm-set/blob/dev/src/main/java/com/top/bpnn/Matrix.java
 
 ## 属性
 
