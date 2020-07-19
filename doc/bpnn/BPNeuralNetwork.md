@@ -104,11 +104,11 @@ Matrix result = factory.computeBP(bpModel, testSet);
 
 [测试源码][4]
 
-[2]:  
+[2]:https://github.com/ineedahouse/top-algorithm-set-doc/blob/master/doc/bpnn/trainData.csv
 
-[3]:  
+[3]:https://github.com/ineedahouse/top-algorithm-set-doc/blob/master/doc/bpnn/testData.csv
 
-[4]: 
+[4]:https://github.com/ineedahouse/top-algorithm-set-doc/blob/master/doc/bpnn/TestBPNN.java
 
 注：测试源码中使用了javacsv jar包，可直接从maven中引入
 
