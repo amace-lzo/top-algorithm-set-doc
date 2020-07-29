@@ -43,6 +43,7 @@
 | `sumAll`           | 合计矩阵中所有数的值               | -                   | `double`     |
 | `square`           | 矩阵中所有值全部进行平方           | -                   | `Matrix`     |
 | `transpose`        | 矩阵转置                           | -                   | `Matrix`     |
+| `subMatrix`        | 截取矩阵                           | `int startRowIndex`,`int rowNums`,`int startColIndex`,`int colNums`                   | `Matrix`     |
 
 ## Next Step
-下个版本会新增矩阵截取方法，并完善矩阵加减乘除等运算方法。
+下个版本会完善矩阵加减乘除等运算方法。
