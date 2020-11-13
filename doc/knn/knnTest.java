@@ -5,10 +5,7 @@ import com.top.matrix.Matrix;
 import com.top.utils.CsvInfo;
 import com.top.utils.CsvUtil;
 import com.top.utils.DoubleUtil;
-import com.top.utils.MatrixUtil;
 import org.junit.Test;
-
-import java.util.Map;
 
 /**
  * @program: top-algorithm-set
@@ -29,15 +26,6 @@ public class knnTest {
         Matrix testSet = csvInfo1.toMatrix();
         Matrix testSetData = trainSet.subMatrix(0, testSet.getMatrixRowCount(), 0, testSet.getMatrixColCount() - 1);
         Matrix testSetLabels = trainSet.getColOfIdx(testSet.getMatrixColCount() - 1);
-
-        // 将训练集数据与测试集数据一起进行归一化
-        int trainCount = trainSetData.getMatrixRowCount();
-        int testCount = testSetData.getMatrixRowCount();
-        Matrix trainAndTest = trainSetData.splice(2, testSetData);
-        Map<String, Object> normalize = MatrixUtil.normalize(trainAndTest, 0, 1);
-        trainAndTest = (Matrix) normalize.get("res");
-        trainSetData = trainAndTest.subMatrix(0, trainCount, 0, trainAndTest.getMatrixColCount());
-        testSetData = trainAndTest.subMatrix(0, testCount, 0, trainAndTest.getMatrixColCount());
 
         // 分类
         long startTime = System.currentTimeMillis();
