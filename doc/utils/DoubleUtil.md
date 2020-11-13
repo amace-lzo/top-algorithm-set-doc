@@ -1,4 +1,4 @@
-#  SerializationUtilDoubleUtil 
+#  DoubleUtil 
 
 Double工具类
 
