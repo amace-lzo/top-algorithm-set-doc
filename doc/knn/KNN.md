@@ -20,21 +20,7 @@
 
 1.获取训练数据及待分类数据的Matrix对象（略）
 
-2.对训练数据与待分类数据进行归一化处理
-
-```java
-// 将训练集数据与测试集数据一起进行归一化
-int trainCount = trainSetData.getMatrixRowCount();
-int testCount = testSetData.getMatrixRowCount();
-Matrix trainAndTest = trainSetData.splice(2, testSet);
-Map<String, Object> normalize = MatrixUtil.normalize(trainAndTest, 0, 1);
-trainAndTest = (Matrix) normalize.get("res");
-trainSetData = trainAndTest.subMatrix(0, trainCount, 0, trainAndTest.getMatrixColCount());
-testSetData = trainAndTest.subMatrix(0, testCount, 0, trainAndTest.getMatrixColCount());
-
-```
-
-3.使用KNN进行分类
+2.使用KNN进行分类
 
 ```java
 Matrix result = KNN.classify(testSetData, trainSetData, trainSetLabels, 5);
