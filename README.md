@@ -1,9 +1,17 @@
 # top-algorithm-set-doc
-The guide of top-algorithm-set 
 
-The source of top-algorithm-set: [Source][1]
+#### 中文
 
-Updated contents of each version：[click][2]
+文档已迁移到[wiki][1]
+[1]: https://github.com/ineedahouse/top-algorithm-set/wiki
 
-[1]: https://github.com/ineedahouse/top-algorithm-set
-[2]: https://github.com/ineedahouse/top-algorithm-set-doc/blob/master/UPDATE_CONTENT.md
+源码: [Source][2]
+[2]: https://github.com/ineedahouse/top-algorithm-set
+
+#### English
+
+The guide moved to [wiki][1]
+[1]: https://github.com/ineedahouse/top-algorithm-set/wiki
+
+Source code: [Source][2]
+[2]: https://github.com/ineedahouse/top-algorithm-set
